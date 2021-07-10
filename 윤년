@@ -1,0 +1,30 @@
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int year = sc.nextInt();
+				
+		if ((year%4 == 0 && year%100 != 0)||(year%400 == 0)) {
+			//조건 맞을경우(윤년일경우
+			System.out.println("1");
+		} else {
+			//조건 안맞을 경우 (평년일 경우)
+			System.out.println("0");
+		}
+		
+	sc.close();	
+	}
+
+}
+
+
+
+//윤년은 4의 배수이면서
+//=윤년은 4로 나누어 떨어진다
+// year%4=0 했을경우 0이 나온다
+// && 
+//year%100 = 0
+
+//또는
+
+//year%400=0  
